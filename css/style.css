@@ -1,0 +1,284 @@
+body {
+    background-color: #f3e5f4;
+    font-family: "PT Sans", Arial, Helvetica, sans-serif;
+    font-size: 1.35rem;
+    padding: 0.5rem;
+    line-height: normal;
+}
+
+nav ul li {
+    display: grid;
+    padding: 0.45rem;
+    color: #d42257;
+    text-align: center;
+    font-size: 1.6rem;
+    justify-content: space-around;
+}
+
+.bolded {
+    font-weight: bold;
+}
+
+ul {
+    display: grid;
+    margin-top: 0.1rem;
+    margin-bottom: 10%;
+}
+
+.active {
+    display: grid;
+    padding: 0.5rem;
+    background-color: #d42257;
+    color: #ffffff;
+}
+
+.food-about {
+    display: grid;
+    padding: 0 0.4rem 0.4rem 0.4rem;
+}
+
+.gallery {
+    background-color: #c8718a;
+    border: 2.5px solid #461322;
+    padding: 0.5rem;
+    list-style: none;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto;
+    gap: 0.5rem;
+}
+
+.image-gallery {
+    width: 90%;
+    height: 90%;
+    margin: 0.2rem;
+    border: 2px solid #461322;
+}
+
+.food-gallery {
+    background-color: #c8718a;
+    border: 2.5px solid #461322;
+    padding: 0.5rem;
+    display: grid;
+    justify-content: space-around;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    gap: 0.5rem;
+}
+
+.center-image {
+    display: grid;
+    border: 5px solid #461322;
+    justify-content: space-around;
+    align-items: center;
+    justify-items: center;
+    width: 90%;
+    border-radius: 10%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.center-travel-image {
+    display: grid;
+    justify-content: space-around;
+    align-items: center;
+    justify-items: center;
+    width: 90%;
+    margin: 1.5rem;
+}
+
+.index {
+    font-size: 4rem;
+}
+
+h1 {
+    display: grid;
+    margin: auto;
+    justify-content: center;
+    border: 3px solid #3a00ff;
+    color: #3a00ff;
+    padding: 1rem;
+    font-size: 6rem;
+}
+
+h2 {
+    display: grid;
+    color:#991c41;
+    margin-top: 14%;
+    font-size: 3rem;
+}
+
+h3 {
+    display: grid;
+    margin-top: 10%;
+    margin-bottom: 2%;
+    font-size: 2rem;
+}
+
+.skip-link {
+    position: absolute;
+    top: auto;
+    left: -10000px;
+    width: 1px;
+    height: 1px;
+    background-color: #d42257;
+    color: #ffffff;
+    font-size: 1.125rem;
+    overflow: hidden;
+}
+
+.skip-link:focus {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: auto;
+    height: auto;
+    padding: 0.5em;
+}
+
+@media screen and (min-width: 800px) {
+    nav ul {
+        display: grid;
+        padding: 0.45rem;
+        color: #d42257;
+        text-align: center;
+        font-size: 1.6rem;
+        justify-content: space-around;
+        grid-template-columns: auto auto auto auto;
+        margin-bottom: 0%;
+        align-items: center;
+    }
+
+    .about {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        align-items: start;
+    }
+
+    .f-about {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: 30% 70%;
+        align-items: start;
+    }
+    /*Source: https: //www.nieknijland.nl/blog/make-a-responsive-carousel-with-just-css*/
+    .gallery {
+        background-color: #f3e5f4;
+        border: none;
+        display: flex;
+        gap: 8px;
+        padding: 16px;
+        margin-bottom: 10%;
+        list-style: none;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+    }
+
+    .food-gallery {
+        background-color: #f3e5f4;
+        border: none;
+        display: flex;
+        gap: 8px;
+        padding: 16px;
+        margin-bottom: 10%;
+        list-style: none;
+        overflow-x: scroll;
+        width: 100%;
+        height: 100%;
+        scroll-snap-type: x mandatory;
+        justify-content: flex-start;
+    }
+
+    .image-gallery {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        border: none;
+        height: 485px;
+        object-fit: cover;
+    }
+    /*End Source*/
+
+    .center-image {
+        display: grid;
+        border: 5px solid #461322;
+        justify-content: space-around;
+        align-items: center;
+        justify-items: center;
+        object-fit: cover;
+        border-radius: 10%;
+        height: 90%;
+        grid-row: 1/-1;
+    }
+
+    h2 {
+        margin-top: 5%;
+    }
+
+    h3 {
+        margin-top: 5%;
+        margin-bottom: 0px;
+    }
+
+    .likes p{
+        display: grid;
+        justify-items: center;
+        text-align: center;
+    }
+
+    .likes ul{
+        display:grid;
+        grid-template-columns: auto auto auto;
+        justify-items: center;
+
+    }
+    .likes li{
+        list-style-type: '\2764\FE0F';
+        justify-content: space-evenly;
+    }
+
+    .food-about {
+        display: grid;
+        padding: 0 0 0 0;
+    }
+
+    .ingredients{
+        margin-bottom: 0%;
+        margin-left: 5%;
+    }
+
+    .ingredients li{
+        list-style-type: '\2705';
+        margin-top: 0.1rem;
+    }
+
+    .food-about li ul{
+        margin-bottom: 0%;
+    }
+
+    ol {
+        margin-left: 5%;
+    }
+
+    .travel-about {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+    }
+
+    .travel-about p{
+        margin-left: 3%;
+        margin-right: 3%;
+        grid-column: 1/-1;
+    }
+
+    .travel-about img {
+        object-fit: cover;
+    }
+}
